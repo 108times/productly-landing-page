@@ -1,10 +1,12 @@
-import fileInclude from 'gulp-file-include';
-
 import webpHtmlNoSvg from 'gulp-webp-html-nosvg';
 
 import versionNumber from 'gulp-version-number';
 
 import pug from 'gulp-pug';
+
+import data from 'gulp-data';
+
+import fs from 'fs';
 
 export const html = () => {
   return (
@@ -19,12 +21,14 @@ export const html = () => {
         ),
       )
       .pipe(
+        data(function (file) {
+          return JSON.parse(fs.readFileSync(app.path.data));
+        }),
+      )
+      .pipe(
         pug({
           verbose: true,
           pretty: true,
-          data: {
-            test: 'Hello',
-          },
         }),
       )
       // .pipe(fileInclude()) // for html
@@ -48,5 +52,6 @@ export const html = () => {
       )
 
       .pipe(app.gulp.dest(app.path.build.html))
+      .pipe(app.plugins.browserSync.stream())
   );
 };

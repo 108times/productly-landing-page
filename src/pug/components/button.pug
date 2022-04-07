@@ -1,0 +1,6 @@
+mixin button(text='Click me',primary=true,  ripple=true)
+    button.btn(
+        class = primary ? 'btn--primary':'btn--secondary',
+        data-effect=ripple?'ripple':'null'
+    )
+        =text

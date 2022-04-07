@@ -1,3 +1,5 @@
+@use 'abstracts/variables' as *;
+
 .btn {
   border-radius: $border-radius-btn;
   color: #fff;
@@ -7,6 +9,7 @@
   vertical-align: center;
   border: none;
   font-weight: 600;
+  cursor: pointer;
 
   &--primary {
     background-color: $brand-color;

@@ -1,11 +1,257 @@
 {
   "title": "Productly",
+  "logo": {
+    "url": "./svg/Logo.svg"
+  },
+  "navigation": {
+    "menu": [
+      {
+        "text": "Product",
+        "link": "/product/"
+      },
+      {
+        "text": "Customers",
+        "link": "/customers/"
+      },
+      {
+        "text": "Pricing",
+        "link": "/pricing/"
+      },
+      {
+        "text": "Resources",
+        "link": "/resources/"
+      }
+    ]
+  },
   "header": {
-    "menu": {
-      "Product": "/product/",
-      "Customers": "/customers/",
-      "Pricing": "/pricing/",
-      "Resources": "/resources/"
+    "title": "The Design Thinking superpowers",
+    "text": "Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.",
+    "image": {
+      "url": "../img/header.svg",
+      "alt": "Header image"
     }
+  },
+  "features": {
+    "title": "We design tools to unveil your superpowers",
+    "background": "./img/gradient-bg.svg",
+    "items": [
+      {
+        "icon": "./svg/mouse.svg",
+        "title": "First click tests",
+        "text": "While most people enjoy casino gambling"
+      },
+      {
+        "icon": "./svg/wave.svg",
+        "title": "Design surveys",
+        "text": "Sports betting, lottery and bingo playing for the fun"
+      },
+      {
+        "icon": "./svg/heart.svg",
+        "title": "Preference tests",
+        "text": "The Myspace page defines the individual."
+      },
+      {
+        "icon": "./svg/time.svg",
+        "title": "Five second tests",
+        "text": "Personal choices and the overall personality of the person. "
+      }
+    ]
+  },
+  "professionals": {
+    "pretitle": "Effortless Validation for",
+    "title": "Design Professionals",
+    "text": "The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. ",
+    "image": {
+      "url": "./img/professionals.svg",
+      "alt": "Professionals image"
+    },
+    "items": [
+      {
+        "title": "Accessory makers",
+        "text": "While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun"
+      },
+      {
+        "title": "Alterationists",
+        "text": "If you are looking for a new way to promote your business that won’t cost you more money, "
+      },
+      {
+        "title": "Custom Design designers",
+        "text": "If you are looking for a new way to promote your business that won’t cost you more money, "
+      }
+    ]
+  },
+  "managers": {
+    "pretitle": "Easier decision making for",
+    "title": "Product Managers",
+    "text": "The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. ",
+    "image": {
+      "url": "./img/managers.svg",
+      "alt": "Professionals image"
+    },
+    "items": [
+      {
+        "icon": "",
+        "text": "Never worry about overpaying for your energy again. "
+      },
+      {
+        "icon": "",
+        "text": "We will only switch you to energy companies that we trust and will treat you right"
+      },
+      {
+        "icon": "",
+        "text": "We track the markets daily and know where the savings are."
+      }
+    ]
+  },
+  "marketers": {
+    "pretitle": "Optimisation for",
+    "title": "Marketers",
+    "text": "Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. ",
+    "image": {
+      "url": "./img/marketers.svg",
+      "alt": "Marketers image"
+    },
+    "items": [
+      {
+        "title": "Accessory makers",
+        "text": "While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun"
+      },
+      {
+        "title": "Alterationists",
+        "text": "If you are looking for a new way to promote your business that won’t cost you more money, "
+      },
+      {
+        "title": "Custom Design designers",
+        "text": "If you are looking for a new way to promote your business that won’t cost you more money, "
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Need a super hero?",
+    "text": "Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page, Ux/UI?",
+    "background": "./img/gradient-bg.svg",
+    "items": [
+      {
+        "avatarImg": {
+          "url": "./img/avatar_1.jpg",
+          "alt": "Avatar 1"
+        },
+        "message": "I can take care of your pitch",
+        "order": "1"
+      },
+      {
+        "avatarImg": {
+          "url": "./img/avatar_2.jpg",
+          "alt": "Avatar 2"
+        },
+        "message": "I can design you website",
+        "order": "2"
+      },
+      {
+        "avatarImg": {
+          "url": "./img/avatar_3.jpg",
+          "alt": "Avatar 3"
+        },
+        "message": "I will define the profile of your users",
+        "order": "3"
+      },
+      {
+        "avatarImg": {
+          "url": "./img/avatar_4.jpg",
+          "alt": "Avatar 4"
+        },
+        "message": "I can prototype your app",
+        "order": "4"
+      },
+      {
+        "avatarImg": {
+          "url": "./img/avatar_5.jpg",
+          "alt": "Avatar 5"
+        },
+        "message": "I can help marketing strategy",
+        "order": "5"
+      }
+    ]
+  },
+  "strategies": {
+    "title": "Marketing Strategies Join 40,000+ other marketers and get proven strategies on email marketing",
+    "text": "Join 40,000+ other marketers and get proven strategies on email marketing",
+    "items": [
+      {
+        "author": "Abdullah",
+        "date": "03 March 2019",
+        "title": "Increasing Prosperity With Positive Thinking",
+        "highlight": false,
+        "image": {
+          "url": "./img/strategy_1.jpg",
+          "alt": "Strategy 1"
+        }
+      },
+      {
+        "author": "Abdullah",
+        "date": "03 March 2019",
+        "title": "Motivation Is The First Step To Success",
+        "highlight": true,
+        "image": {
+          "url": "./img/strategy_2.jpg",
+          "alt": "Strategy 2"
+        }
+      },
+      {
+        "author": "Abdullah",
+        "date": "03 March 2019",
+        "title": "Success Steps For Your Personal Or Business Life",
+        "highlight": false,
+        "image": {
+          "url": "./img/strategy_3.jpg",
+          "alt": "Strategy 3"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "menu_1": {
+      "title": "Quick Links",
+      "items": [
+        {
+          "text": "About Us",
+          "link": "/about_us/"
+        },
+        {
+          "text": "Blog",
+          "link": "/blog/"
+        },
+        {
+          "text": "Contact",
+          "link": "/contact/"
+        },
+        {
+          "text": "FAQ",
+          "link": "/FAQ/"
+        }
+      ]
+    },
+    "menu_2": {
+      "title": "Legal Stuff",
+      "items": [
+        {
+          "text": "Disclaimer",
+          "link": "/disclaimer/"
+        },
+        {
+          "text": "Financing",
+          "link": "/financing/"
+        },
+        {
+          "text": "Privacy Policy",
+          "link": "/privacy policy/"
+        },
+        {
+          "text": "Terms of Service",
+          "link": "/terms_of_service/"
+        }
+      ]
+    },
+    "mail_title": "Knowing you're always on the best energy deal."
   }
 }

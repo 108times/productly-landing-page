@@ -16,10 +16,3 @@
 @function font($path, $base: $base-url) {
   @return asset($base, 'fonts/', $path);
 }
-
-/// Creates grid containing styles for columns
-/// like in boosttrap
-@function grid($rows, $width) {
-  @for $i from 1 through $rows {
-  }
-}

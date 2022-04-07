@@ -1,6 +1,4 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
+// @use 'scss:colors';
 
 /// Regular font family
 $text-font-stack: 'Poppins', 'Geometria', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica',
@@ -9,12 +7,17 @@ $text-font-stack: 'Poppins', 'Geometria', 'Helvetica Neue Light', 'Helvetica Neu
 /// Regular font size
 $font-size: 16px;
 
-/// Copy text color
+/// Text color
 $text-color: #544837 !default;
+
+// Secondary text color
 $text-color-2: #2f281e !default;
 
 /// Main brand color
 $brand-color: #ff9900 !default;
+
+// Hover main brand color
+$brand-color-lighter: lighten(#ff9900, 20%) !default;
 
 /// Light grey
 $secondary-color: #bcd0e5 !default;

@@ -1,20 +1,13 @@
+/// data.json contains all the variables
+/// It is being transmitted in gulp's scenario
+/// gulp/tasks -> html.js script
+
+include pug/components/index
+
 doctype html
 html(lang="en")
 
-  -
-    console.log('opts', opts);
-    const data = {
-      "title": "Productly",
-      "header": {
-          "menu": {
-            "Product": "/product/",
-            "Customers": "/customers/",
-            "Pricing": "/pricing/",
-            "Resources": "/resources/"
-          }
-        }
-      }
-
+  // head
   include pug/head
 
   body
@@ -23,6 +16,7 @@ html(lang="en")
       include pug/navigation
 
       // header
+      include pug/sections/header
 
       // features
 

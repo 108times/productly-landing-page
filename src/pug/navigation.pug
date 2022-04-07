@@ -1,15 +1,17 @@
 header.navigation
-    .container
+    .container.navigation__container
         nav.navigation__nav
-            .logo
+            .logo.navigation__logo
                 img.logo__image(src="./img/Logo.svg")
 
-            // Menu
             ul.menu.navigation__menu
-                each val,key in data.header.menu
-                    li #{key}
+
+                each val,key in navigation.menu
+                    - const {text, link} = val;
+                    li.menu__item.navigation__menu-item
+                        a.menu__link.navigation__menu-link(href=link) #{text}
 
             .navigation__buttons
-                button.btn.btn--secondary Sign In
-                button.btn.btn--primary Sign Up
+                +button('Sign In', false)
+                +button('Sign Up')
 

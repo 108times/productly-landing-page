@@ -34,5 +34,6 @@ export const path = {
   srcFolder: srcFolder,
   buildFolder: buildFolder,
   rootFolder: rootFolder,
+  data: `${srcFolder}/data.json`, // data for pug
   ftp: `test`,
 };

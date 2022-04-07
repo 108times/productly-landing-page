@@ -1,7 +1,4 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass mixins.
-// -----------------------------------------------------------------------------
-
+@use 'sass:math';
 /// Event wrapper
 /// @param {Bool} $self [false] - Whether or not to include current selector
 @mixin on-event($self: false) {
@@ -29,15 +26,43 @@
   }
 }
 
-
 @mixin mq($width, $type: min) {
-    @if map_has_key($breakpoints, $width) {
-        $width: map_get($breakpoints, $width);
-        @if $type == max {
-            $width: $width - 1px;
-        }
-        @media only screen and (#{$type}-width: $width) {
-            @content;
-        }
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
     }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+/// Creates grid containing styles for columns
+/// like in boosttrap
+@mixin grid($columns, $width) {
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      width: $i * (100% / $columns);
+      flex: 1;
+    }
+  }
+}
+
+/// Creates grid containing styles for columns
+/// like in boosttrap
+@mixin grid($columns, $width) {
+  @for $i from 1 through $columns {
+    #col-#{$i} {
+      width: $i * math.div(100%, $columns);
+      flex: 1;
+    }
+  }
+}
+
+/// Add dots at the end if text is not fitting
+@mixin text-shorten {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

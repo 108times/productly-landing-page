@@ -1,0 +1,10 @@
+section.header
+    .container.header__container
+        .header__left
+            h1.header__title #{header.title}
+            p.header__text #{header.text}
+            .header__buttons
+                +button('Get started')
+                +link('Watch the Video')
+        .header__right
+            img.section-img.header__img(src=header.image.url alt=header.image.alt)
