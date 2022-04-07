@@ -1,0 +1,8 @@
+mixin review(className, data)
+    div(class=className+(data.alignment === 'left' ? ' review--left-aligned' : ' review--right-aligned'))
+        img.review__avatar(src=data.avatarImg.url,alt=data.avatarImg.alt )
+        .review__message
+            span.review__message-circle-1
+            span.review__message-circle-2
+            p.review__message-body #{data.message}
+

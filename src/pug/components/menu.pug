@@ -1,0 +1,5 @@
+mixin menu(className, data, direction='horizontal')
+    ul.menu(class=className+(direction==='horizontal' ? ' menu--horizontal' : ' menu--vertical'))
+        each val,key in data.items
+            li.menu__item
+                a.menu__link(href=val.link) #{val.text}

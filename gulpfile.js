@@ -23,6 +23,7 @@ import {
   scss,
   js,
   images,
+  svgImages,
   svgSprite,
   zip,
   ftp,
@@ -48,7 +49,7 @@ const fonts = plugins.if(!app.development, gulp.series(otfToTtf, ttfToWoff, font
 export { fonts };
 
 // Основные задачи
-const mainTasks = gulp.series(fontsStyles, gulp.parallel(files, html, scss, js, images));
+const mainTasks = gulp.series(fontsStyles, gulp.parallel(files, html, scss, js, images, svgImages));
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(clean, mainTasks, gulp.parallel(watcher, server));

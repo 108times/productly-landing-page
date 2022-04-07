@@ -1,0 +1,11 @@
+- var data = testimonials
+section.site-section.testimonials
+    .contianer.testimonials__container
+        .testimonials__description
+            h1.testimonials__title #{data.title}
+            p.testimonials__text #{data.text}
+            +button('Contact our expert')(class='testimonials__cta-button')
+        .testimonials__people
+            - const reviews = data.items.sort((a,b) => +a.order > +b.order ? 1 : +a.order < +b.order ? -1 : 0)
+            each val,key in reviews
+                +review('testimonials__review', val)

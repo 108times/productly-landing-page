@@ -1,0 +1,10 @@
+- var data = professionals
+section.site-section.professionals
+    .contianer.professionals__container
+        .professionals__left
+            +description('professionals__description', data)
+            .professionals__advantages
+                each val,key in data.items
+                    +advantage('professionals__advantage', val)
+        .professionals__right
+            img.section-img.professionals__img(src=data.image.url, alt=data.image.alt)

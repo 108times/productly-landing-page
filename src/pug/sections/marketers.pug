@@ -1,0 +1,10 @@
+- var data = marketers
+section.site-section.marketers
+    .contianer.marketers__container
+        .marketers__left
+            +description('marketers__description', data)
+            .marketers__advantages
+                each val,key in data.items
+                    +advantage('marketers__advantage', val)
+        .marketers__right
+            img.section-img.marketers__img(src=data.image.url, alt=data.image.alt)

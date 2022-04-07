@@ -1,27 +1,30 @@
 {
   "title": "Productly",
   "logo": {
-    "url": "./svg/Logo.svg"
+    "url": "../img/Logo.svg",
+    "alt": "Logo"
   },
   "navigation": {
-    "menu": [
-      {
-        "text": "Product",
-        "link": "/product/"
-      },
-      {
-        "text": "Customers",
-        "link": "/customers/"
-      },
-      {
-        "text": "Pricing",
-        "link": "/pricing/"
-      },
-      {
-        "text": "Resources",
-        "link": "/resources/"
-      }
-    ]
+    "menu": {
+      "items": [
+        {
+          "text": "Product",
+          "link": "/product/"
+        },
+        {
+          "text": "Customers",
+          "link": "/customers/"
+        },
+        {
+          "text": "Pricing",
+          "link": "/pricing/"
+        },
+        {
+          "text": "Resources",
+          "link": "/resources/"
+        }
+      ]
+    }
   },
   "header": {
     "title": "The Design Thinking superpowers",
@@ -33,25 +36,25 @@
   },
   "features": {
     "title": "We design tools to unveil your superpowers",
-    "background": "./img/gradient-bg.svg",
+    "background": "../img/gradient-bg.svg",
     "items": [
       {
-        "icon": "./svg/mouse.svg",
+        "icon": "../img/mouse.svg",
         "title": "First click tests",
         "text": "While most people enjoy casino gambling"
       },
       {
-        "icon": "./svg/wave.svg",
+        "icon": "../img/wave.svg",
         "title": "Design surveys",
         "text": "Sports betting, lottery and bingo playing for the fun"
       },
       {
-        "icon": "./svg/heart.svg",
+        "icon": "../img/heart.svg",
         "title": "Preference tests",
         "text": "The Myspace page defines the individual."
       },
       {
-        "icon": "./svg/time.svg",
+        "icon": "../img/time.svg",
         "title": "Five second tests",
         "text": "Personal choices and the overall personality of the person. "
       }
@@ -137,7 +140,8 @@
           "alt": "Avatar 1"
         },
         "message": "I can take care of your pitch",
-        "order": "1"
+        "order": "1",
+        "alignment": "left"
       },
       {
         "avatarImg": {
@@ -145,7 +149,8 @@
           "alt": "Avatar 2"
         },
         "message": "I can design you website",
-        "order": "2"
+        "order": "2",
+        "alignment": "right"
       },
       {
         "avatarImg": {
@@ -153,7 +158,8 @@
           "alt": "Avatar 3"
         },
         "message": "I will define the profile of your users",
-        "order": "3"
+        "order": "3",
+        "alignment": "right"
       },
       {
         "avatarImg": {
@@ -161,7 +167,8 @@
           "alt": "Avatar 4"
         },
         "message": "I can prototype your app",
-        "order": "4"
+        "order": "4",
+        "alignment": "right"
       },
       {
         "avatarImg": {
@@ -169,7 +176,8 @@
           "alt": "Avatar 5"
         },
         "message": "I can help marketing strategy",
-        "order": "5"
+        "order": "5",
+        "alignment": "right"
       }
     ]
   },
@@ -252,6 +260,10 @@
         }
       ]
     },
-    "mail_title": "Knowing you're always on the best energy deal."
+    "signup_form": {
+      "title": "Knowing you're always on the best energy deal.",
+      "input_placeholder": "Enter ypur phone Number",
+      "button_text": "Sign Up Now"
+    }
   }
 }

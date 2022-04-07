@@ -1,10 +1,11 @@
-section.header
+- var data = header;
+section.site-section.header
     .container.header__container
         .header__left
-            h1.header__title #{header.title}
-            p.header__text #{header.text}
+            h1.header__title #{data.title}
+            p.header__text #{data.text}
             .header__buttons
                 +button('Get started')
                 +link('Watch the Video')
         .header__right
-            img.section-img.header__img(src=header.image.url alt=header.image.alt)
+            img.section-img.header__img(src=data.image.url alt=data.image.alt)

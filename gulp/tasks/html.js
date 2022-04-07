@@ -33,7 +33,7 @@ export const html = () => {
       )
       // .pipe(fileInclude()) // for html
       .pipe(app.plugins.replace(/@img\//g, 'img/'))
-      .pipe(app.plugins.if(app.development, webpHtmlNoSvg()))
+      .pipe(app.plugins.if(!app.development, webpHtmlNoSvg()))
       .pipe(
         app.plugins.if(
           app.development,

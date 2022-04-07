@@ -1,0 +1,8 @@
+mixin input(className, typeValue, placeholderValue, val, ripple=true)
+    - className = className || ''
+    - typeValue = typeValue || ''
+    - placeholderValue = placeholderValue || 'Enter your text'
+    - val = val || ''
+    - ripple = ripple ? 'ripple' : ''
+    input.input(class=className, type=typeValue, placeholder=placeholderValue, value=val, data-effects=ripple)
+

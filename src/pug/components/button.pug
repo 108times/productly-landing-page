@@ -1,6 +1,8 @@
-mixin button(text='Click me',primary=true,  ripple=true)
+mixin button(text='Click me',primary=true,ripple=true)
+    - const classes = `${primary ? 'btn--primary':'btn--secondary'} ${attributes.class ? attributes.class: ''}`
+
     button.btn(
-        class = primary ? 'btn--primary':'btn--secondary',
+        class=classes,
         data-effect=ripple?'ripple':'null'
     )
         =text

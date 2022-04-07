@@ -39,3 +39,17 @@ export const images = () => {
       .pipe(app.plugins.browserSync.stream())
   );
 };
+
+export const svgImages = () =>
+  app.gulp
+    .src(app.path.src.svg)
+    .pipe(
+      app.plugins.plumber(
+        app.plugins.notify.onError((error) => ({
+          title: 'SVG',
+          message: `Error: ${error.message}`,
+        })),
+      ),
+    )
+    .pipe(app.gulp.dest(app.path.build.images))
+    .pipe(app.plugins.browserSync.stream());

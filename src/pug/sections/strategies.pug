@@ -1,0 +1,13 @@
+- var data = strategies
+section.site-section.strategies
+    .contianer.strategies__container
+        .strategies__description
+            h1.strategies__title #{data.title}
+            p.strategies__text #{data.text}
+        .strategies__content
+            .swiper.strategies__slider
+                .swiper-wrapper
+                    each val,key in data.items
+                        +article('strategies__slide swiper-slide col-4', val)
+                .swiper-pagination
+

@@ -1,16 +1,9 @@
+- var data = navigation
 header.navigation
     .container.navigation__container
         nav.navigation__nav
-            .logo.navigation__logo
-                img.logo__image(src="./img/Logo.svg")
-
-            ul.menu.navigation__menu
-
-                each val,key in navigation.menu
-                    - const {text, link} = val;
-                    li.menu__item.navigation__menu-item
-                        a.menu__link.navigation__menu-link(href=link) #{text}
-
+            +logo('navigation__logo', logo)
+            +menu('navigation__menu', data.menu)
             .navigation__buttons
                 +button('Sign In', false)
                 +button('Sign Up')
