@@ -1,0 +1,15 @@
+header.navigation
+    .container
+        nav.navigation__nav
+            .logo
+                img.logo__image(src="./img/Logo.svg")
+
+            // Menu
+            ul.menu.navigation__menu
+                each val,key in data.header.menu
+                    li #{key}
+
+            .navigation__buttons
+                button.btn.btn--secondary Sign In
+                button.btn.btn--primary Sign Up
+

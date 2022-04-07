@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+$text-font-stack: 'Poppins', 'Geometria', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica',
+  'Arial', sans-serif !default;
+
+/// Regular font size
+$font-size: 16px;
+
+/// Copy text color
+$text-color: #544837 !default;
+$text-color-2: #2f281e !default;
+
+/// Main brand color
+$brand-color: #ff9900 !default;
+
+/// Light grey
+$secondary-color: #bcd0e5 !default;
+
+/// Medium grey
+$blue: #567592 !default;
+
+/// Dark grey
+$dark-blue: #173a56 !default;
+
+// Buttons border radius
+$border-radius-btn: 4px;
+
+/// Container's maximum width
+$max-width: 1110px !default;
+
+/// Breakpoints map
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+// /// Relative or absolute URL where all assets are served from
+// /// @type String
+// /// @example scss - When using a CDN
+// ///   $base-url: 'http://cdn.example.com/assets/';
+// $base-url: '/assets/' !default;

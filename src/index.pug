@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+
+  -
+    console.log('opts', opts);
+    const data = {
+      "title": "Productly",
+      "header": {
+          "menu": {
+            "Product": "/product/",
+            "Customers": "/customers/",
+            "Pricing": "/pricing/",
+            "Resources": "/resources/"
+          }
+        }
+      }
+
+  include pug/head
+
+  body
+    main
+      // navigation
+      include pug/navigation
+
+      // header
+
+      // features
+
+      // professionals
+
+      // managers
+
+      // marketers
+
+      // testimonials
+
+      // strategies
+
+      // footer
+
+
+    script(src="js/app.min.js")
+

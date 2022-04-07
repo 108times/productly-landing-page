@@ -1,0 +1,11 @@
+{
+  "title": "Productly",
+  "header": {
+    "menu": {
+      "Product": "/product/",
+      "Customers": "/customers/",
+      "Pricing": "/pricing/",
+      "Resources": "/resources/"
+    }
+  }
+}
