@@ -49,16 +49,6 @@
   }
 }
 
-/// Creates grid containing styles for columns
-/// like in boosttrap
-@mixin grid($columns, $width) {
-  @for $i from 1 through $columns {
-    #col-#{$i} {
-      width: $i * math.div(100%, $columns);
-      flex: 1;
-    }
-  }
-}
 
 /// Add dots at the end if text is not fitting
 @mixin text-shorten {
@@ -66,3 +56,4 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+

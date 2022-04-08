@@ -1,32 +1,33 @@
 .navigation {
+
+  &__logo {
+    width: auto;
+  }
+  &__container {
+    padding-inline: 0;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 4.875rem;
+  }
+
+  .menu {
+    width: rem(451);
+    padding-inline: rem(67) rem(61);
+    margin-left: auto;
+    &__item {
+    }
+    &-wrapper {
+      flex-grow: 1;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 14px;
+  }
 }
-.container {
-}
-.navigation__container {
-}
-.navigation__nav {
-}
-.logo {
-}
-.logo__image {
-}
-.menu {
-}
-.navigation__menu {
-}
-.menu__item {
-}
-.navigation__menu-item {
-}
-.menu__link {
-}
-.navigation__menu-link {
-}
-.navigation__buttons {
-}
-.btn {
-}
-.btn--secondary {
-}
-.btn--primary {
-}
+
+

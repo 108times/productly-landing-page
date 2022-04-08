@@ -1,7 +1,7 @@
 {
   "title": "Productly",
   "logo": {
-    "url": "../img/Logo.svg",
+    "url": "./img/Logo.svg",
     "alt": "Logo"
   },
   "navigation": {
@@ -30,31 +30,38 @@
     "title": "The Design Thinking superpowers",
     "text": "Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.",
     "image": {
-      "url": "../img/header.svg",
+      "url": "./img/header.svg",
       "alt": "Header image"
     }
   },
   "features": {
     "title": "We design tools to unveil your superpowers",
-    "background": "../img/gradient-bg.svg",
+    "background": "./img/gradient-bg.svg",
     "items": [
       {
-        "icon": "../img/mouse.svg",
+        "icon": "./img/mouse.svg",
+        "icon_shadow": "./img/mouse_shadow.svg",
         "title": "First click tests",
         "text": "While most people enjoy casino gambling"
       },
       {
-        "icon": "../img/wave.svg",
+        "icon": "./img/wave.svg",
+        "icon_shadow": "./img/wave_shadow.svg",
+
         "title": "Design surveys",
         "text": "Sports betting, lottery and bingo playing for the fun"
       },
       {
-        "icon": "../img/heart.svg",
+        "icon": "./img/heart.svg",
+        "icon_shadow": "./img/heart_shadow.svg",
+
         "title": "Preference tests",
         "text": "The Myspace page defines the individual."
       },
       {
-        "icon": "../img/time.svg",
+        "icon": "./img/time.svg",
+        "icon_shadow": "./img/time_shadow.svg",
+
         "title": "Five second tests",
         "text": "Personal choices and the overall personality of the person. "
       }

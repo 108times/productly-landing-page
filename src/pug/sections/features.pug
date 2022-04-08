@@ -1,16 +1,13 @@
 - var data = features;
 section.site-section.features
+    img.features__background(src=data.background, alt='Background')
     .container.features__container
         h2.features__title
-            #{data.title}
+            =data.title
         .features__content
 
-            .features__items
+            .row.features__items
                 each val,key in data.items
-                    - const {icon, title, text} = val
-                        .features__item
-                            img.features__icon(src=icon, rel=icon)
-                            h3.features__title #{title}
-                            p.features__text #{text}
+                    +feature('features__item col', val)
 
             +button('SIGN UP NOW')(class='features__cta')

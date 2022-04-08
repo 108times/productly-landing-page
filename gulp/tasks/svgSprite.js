@@ -2,7 +2,7 @@ import gulpSvgSprite from 'gulp-svg-sprite';
 
 export const svgSprite = function () {
   return app.gulp
-    .src(app.path.src.svgIcons)
+    .src(app.path.src.svgIcons, {})
     .pipe(
       app.plugins.plumber(
         app.plugins.notify.onError((error) => ({
@@ -21,5 +21,5 @@ export const svgSprite = function () {
         },
       }),
     )
-    .pipe(app.gulp.src(`${app.path.build.images}`));
+    .pipe(app.gulp.dest(`${app.path.build.images}`));
 };

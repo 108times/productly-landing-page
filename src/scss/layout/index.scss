@@ -1,4 +1,5 @@
 
-@forward "header";
-@forward "navigation";
-@forward "footer";
+@import "header";
+@import "navigation";
+@import "footer";
+@import 'features';

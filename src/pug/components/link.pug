@@ -1,3 +1,6 @@
-mixin link(text, href)
+mixin link(text,className, href, icon)
     a.link(href=href)
+        if icon !== undefined
+          span.icon-container.
+            !{icon}
         =text

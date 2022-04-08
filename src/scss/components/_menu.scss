@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  &__item {
+    font-size: 14px;
+    line-height: 2em;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+    font-size: inherit;
+  }
+
+  &.menu--horizontal {
+    flex-direction: row;
+  }
+
+}

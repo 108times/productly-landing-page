@@ -1,7 +1,85 @@
 .header {
-    .navigation {
-        display: flex;
-        justify-content: space-between;
-        padding: 15px
+  padding-top: rem(41);
+  // .header__container
+
+  &__container {
+    padding-inline: 0;
+  }
+
+  // .header__left
+
+  &__left {
+    div & {
+      //width: 48%;
+
     }
+  }
+
+  // .header__title
+
+  &__title {
+    color: $text-color-2;
+    font-weight: 700;
+    line-height: em(54, 44px);
+    font-size: rem(44);
+    margin-top: rem(73);
+  }
+
+  // .header__text
+
+  &__text {
+    margin-top: rem(30);
+    color: $text-color;
+    font-size: 18px;
+    line-height: em(28,18px);
+    text-align: left;
+    width: 83%;
+  }
+
+  // .header__buttons
+
+  &__buttons {
+    margin-top: rem(55);
+    display: flex;
+    gap: rem(30);
+
+    .btn {
+      min-height: rem(53);
+      padding-inline: rem(42);
+    }
+    &:nth-child(2) {
+        margin-left: rem(10);
+    }
+  }
+
+
+  .link {
+    padding-block: rem(11);
+    display: inline-flex;
+    gap: rem(8.5) ;
+    align-items: center;
+    position: relative;
+    padding: 0;
+
+    & .icon-container {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // .header__right
+  &__right {
+    padding-inline: 0;
+    position: relative;
+  }
+
+  // .header__img
+
+  &__img {
+    position: relative;
+    top: -11px;
+    left: -34px;
+  }
 }

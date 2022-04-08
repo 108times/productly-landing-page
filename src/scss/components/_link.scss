@@ -1,0 +1,7 @@
+.link  {
+  @extend .btn;
+  display: inline-block;
+  background: none;
+  color: $brand-color;
+  text-decoration: underline $brand-color;
+}

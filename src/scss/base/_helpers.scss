@@ -24,12 +24,12 @@
   width: 100%; /* 1 */
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
+// .row {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
-@include mixins.grid(12, variables.$max-width);
+// @include mixins.grid(12, variables.$max-width);
 
 /**
  * Hide text while making it readable for screen readers
@@ -57,4 +57,13 @@
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+
+.site-section {
+
+}
+
+.section-img {
+
 }

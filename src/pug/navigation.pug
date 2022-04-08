@@ -3,7 +3,8 @@ header.navigation
     .container.navigation__container
         nav.navigation__nav
             +logo('navigation__logo', logo)
-            +menu('navigation__menu', data.menu)
+            .menu-wrapper
+                +menu('navigation__menu', data.menu)
             .navigation__buttons
                 +button('Sign In', false)
                 +button('Sign Up')

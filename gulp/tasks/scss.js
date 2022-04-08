@@ -6,6 +6,7 @@ import webpcss from 'gulp-webpcss';
 import autoprefixer from 'gulp-autoprefixer';
 import groupCssMediaQueries from 'gulp-group-css-media-queries';
 import cleanCss from 'gulp-clean-css';
+import debug from 'gulp-debug';
 
 const sass = gulpSass(dartSass);
 
@@ -14,9 +15,11 @@ export const scss = () => {
     .lazypipe()
     .pipe(groupCssMediaQueries)
     .pipe(webpcss, {
-      webpClass: '.webp',
-      noWebpClass: '.no-webp',
+      // webpClass: '.webp',
+      // replace_from:/\.(png|jpg|jpeg)/,
+      // replace_to:'.webp',
     })
+    .pipe(debug)
     .pipe(autoprefixer, {
       grid: true,
       overrideBrowserslist: ['last 3 versions'],
@@ -25,7 +28,7 @@ export const scss = () => {
 
   return (
     app.gulp
-      .src(app.path.src.scss, { sourcemaps: !app.development })
+      .src(app.path.src.scss, { sourcemaps: app.development })
       .pipe(
         app.plugins.plumber(
           app.plugins.notify.onError((error) => ({

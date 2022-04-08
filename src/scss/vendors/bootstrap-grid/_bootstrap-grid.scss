@@ -1,0 +1,55 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;
+// scss-docs-end container-max-widths
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+// Row
+//
+// Rows contain your columns.
+
+@if $enable-grid-classes {
+  .row {
+    @include make-row();
+
+    > * {
+      @include make-col-ready();
+    }
+  }
+}
+
+@if $enable-cssgrid {
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(var(--#{$prefix}rows, 1), 1fr);
+    grid-template-columns: repeat(var(--#{$prefix}columns, #{$grid-columns}), 1fr);
+    gap: var(--#{$prefix}gap, #{$grid-gutter-width});
+
+    @include make-cssgrid();
+  }
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@if $enable-grid-classes {
+  @include make-grid-columns();
+}

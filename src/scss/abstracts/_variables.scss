@@ -1,11 +1,17 @@
-// @use 'scss:colors';
+ @use 'sass:color';
+
+ /// Typography
 
 /// Regular font family
 $text-font-stack: 'Poppins', 'Geometria', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica',
   'Arial', sans-serif !default;
 
 /// Regular font size
-$font-size: 16px;
+$font-size: 16px !default;
+
+
+
+/// Colors
 
 /// Text color
 $text-color: #544837 !default;
@@ -17,16 +23,26 @@ $text-color-2: #2f281e !default;
 $brand-color: #ff9900 !default;
 
 // Hover main brand color
-$brand-color-lighter: lighten(#ff9900, 20%) !default;
+$brand-color-lighter: color.adjust($brand-color, $lightness: 15%) !default;
 
-/// Light grey
+/// Secondary color
 $secondary-color: #bcd0e5 !default;
 
-/// Medium grey
+// Hover secondary color
+$secondary-color-lighter: color.adjust($secondary-color, $whiteness: 15%)  !default;
+
+ /// Medium grey
 $blue: #567592 !default;
 
 /// Dark grey
 $dark-blue: #173a56 !default;
+
+
+
+ /// transition
+ $trans-dur-default: 250ms;
+ $trans-time-func-default: ease-out;
+
 
 // Buttons border radius
 $border-radius-btn: 4px;
@@ -41,22 +57,7 @@ $breakpoints: (
   'large': 1024px,
 ) !default;
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
-);
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px,
-);
 
 // /// Relative or absolute URL where all assets are served from
 // /// @type String
