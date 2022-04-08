@@ -1,0 +1,53 @@
+.professionals {
+  margin-top: rem(120);
+  position: relative;
+  left: 1px;
+  &__container {
+    padding-inline: 0;
+  }
+
+  // .professionals__left
+
+  &__row {
+    gap: rem(16);
+  }
+
+  &__left {
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  // .professionals__img
+
+  &__img {
+    position: relative;
+    left: rem(15.2);
+    top: -1px;
+  }
+}
+.contianer {
+}
+.description {
+}
+.pretitle {
+}
+.title {
+}
+.text {
+}
+.advantage {
+
+  // .advantage__title
+
+  &__title {
+  }
+
+  // .advantage__text
+
+  &__text {
+  }
+}
+.section-img {
+}

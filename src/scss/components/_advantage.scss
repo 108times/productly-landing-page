@@ -1,0 +1,14 @@
+.advantage {
+  height: rem(93);
+  max-width: rem(486);
+  margin-bottom: rem(22);
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-block: rem(16);
+  }
+  &__text {
+    font-weight: 500;
+    line-height: em(26);
+  }
+}

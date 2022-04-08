@@ -1,10 +1,11 @@
 - var data = managers
 section.site-section.managers
     .container.managers__container
-        .managers__left
-            img.section-img.managers__img(src=data.image.url, alt=data.image.alt)
-        .managers__right
-            +description('managers__description', data)
-            .managers__advantages
-                each val,key in data.items
-                    +iconAdvantage('managers__advantage', val)
+        .row.managers__row
+            .col.managers__left
+                img.section-img.managers__img(src=data.image.url, alt=data.image.alt)
+            .col.managers__right
+                +description('managers__description', data)
+                .section-items.managers__advantages
+                    each val,key in data.items
+                        +iconAdvantage('managers__advantage', val)
