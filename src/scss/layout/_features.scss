@@ -2,12 +2,15 @@
   position: relative;
   margin-top: rem(97);
   padding-bottom: rem(91);
+
+
   // .features__container
 
   &__container {
     position: relative;
     z-index: 10;
     padding-inline: 20px !important;
+    padding-bottom: rem(120);
   }
 
   // .features__title
@@ -22,10 +25,11 @@
   }
 
   &__background {
+
     position: absolute;
     z-index: 2;
-    bottom: 0 ;
-    left: -9.2%;
+    bottom: rem(29);
+
   }
 
   // .features__content

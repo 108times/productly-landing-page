@@ -1,0 +1,8 @@
+mixin worker(className, data)
+    div(class='worker '+("worker-" + data.order + " ")+className+(data.alignment === 'left' ? ' worker--left-aligned' : ' worker--right-aligned'))
+        img.worker__avatar(src=data.avatarImg.url,alt=data.avatarImg.alt )
+        .worker__message
+            span.worker__message-circle-1
+            span.worker__message-circle-2
+            p.worker__message-body #{data.message}
+

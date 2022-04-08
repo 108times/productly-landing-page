@@ -1,0 +1,141 @@
+
+.testimonials {
+  margin-top: rem(128);
+  position: relative;
+  padding-bottom:rem(300);
+  &__background {
+    transform: rotate(180deg);
+    top: 0;
+    z-index: 1;
+    left: -50%;
+  }
+
+  &__container {
+    padding-top: rem(230);
+
+    position: relative;
+
+  }
+
+  &__description {
+    max-width: rem(542);
+    max-height: rem(246);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 2px;
+    z-index: 10;
+  }
+  &__title {
+    font-size: rem(36);
+    line-height: em(54, 36px);
+    font-weight: 700;
+    color: $text-color-2;
+    margin-top: rem(12);
+    margin-bottom: rem(21);
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: em(26);
+    text-align: center;
+    margin-top: 0;
+    color: $blue;
+  }
+
+  &__cta-button {
+    min-height: em(53);
+    padding-inline: em(29) em(33) ;
+    margin-top: rem(30);
+
+  }
+  &__workers {
+    position: absolute;
+  width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 10;
+  }
+
+
+  .worker.worker-1 {
+    top: rem(192);
+    left: rem(-19);
+  }
+
+  .worker.worker-2 {
+    top: rem(473.5);
+    left: rem(49);
+    .worker__message-body {
+        padding-inline: rem(31.5) rem(30.5);
+      padding-block: rem(16.5) rem(14);
+
+    }
+  }
+  .worker.worker-3 {
+    top: rem(572);
+    left: rem(435);
+    .worker__message-body {
+      padding-inline: rem(24.5) rem(22.5);
+      padding-block: rem(15.5) rem(14);
+    }
+  }
+  .worker.worker-4, .worker.worker-5  {
+    .worker__message {
+      right: rem(59); // 41
+      &-body {
+        padding-inline: rem(26.5) rem(19.5);
+        padding-block: rem(15.5) rem(14);
+      }
+      .worker__message-circle-1 {
+        right: rem(36); // 54
+      }
+
+      .worker__message-circle-2 {
+        right: rem(18) // 36;
+      }
+    }
+  }
+  .worker.worker-4 {
+    top: rem(450);
+    right: rem(-15.5);
+
+
+  }
+  .worker.worker-5 {
+    top: rem(126.5);
+    right: rem(79);
+  }
+
+}
+.container {
+}
+.btn {
+}
+.btn--primary {
+}
+.review--left-aligned {
+}
+.review {
+
+  &__avatar {
+  }
+
+  &__message {
+  }
+
+  &__message-circle-1 {
+  }
+
+  &__message-circle-2 {
+  }
+
+  &__message-body {
+  }
+}
+.review--right-aligned {
+}
