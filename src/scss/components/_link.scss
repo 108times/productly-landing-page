@@ -4,4 +4,10 @@
   background: none;
   color: $brand-color;
   text-decoration: underline $brand-color;
+  opacity: 1;
+  transition: opacity $trans-dur-default $trans-time-func-default;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }

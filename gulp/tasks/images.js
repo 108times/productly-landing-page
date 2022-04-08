@@ -30,8 +30,8 @@ export const images = () => {
           })),
         ),
       )
-      // if in development
-      .pipe(app.plugins.if(app.development, devTasks()))
+      // if not in development
+      .pipe(app.plugins.if(!app.development, devTasks()))
       .pipe(app.gulp.dest(app.path.build.images))
       // svg
       .pipe(app.gulp.src(app.path.src.images))

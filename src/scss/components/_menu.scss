@@ -4,7 +4,7 @@
   justify-content: space-between;
   list-style: none;
   &__item {
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 2em;
   }
 
@@ -12,6 +12,11 @@
     text-decoration: none;
     color: $text-color;
     font-size: inherit;
+    transition: color $trans-dur-default $trans-time-func-default;
+
+    &:hover {
+      color: $brand-color
+    }
   }
 
   &.menu--horizontal {

@@ -2,18 +2,18 @@
 footer.footer
     .container.footer__container
         .row.footer__row
-            .col-3.footer__column
-                +logo('navigation__logo', logo)
-            .col-3.footer__column
+            .col-md-3.footer__column
+                +logo('footer__logo', logo)
+            .col-md-3.footer__column
                 .footer__menu-container
                     h5.footer__menu-title #{data.menu_1.title}
                     +menu('footer__menu', data.menu_1)
-            .col-3.footer__column
+            .col-md-2.footer__column
                 .footer__menu-container
                     h5.footer__menu-title #{data.menu_2.title}
                     +menu('footer__menu', data.menu_2)
-            .col-4.footer__column
+            .col-md-4.footer__column
                 .signup-form.footer__signup-form
                     h5.signup-form__title #{data.signup_form.title}
                     +input('signup-form__input','text',data.signup_form.input_placeholder)
-                    +button(data.signup_form.button_text )('signup-form__button')
+                    +button(data.signup_form.button_text)(class='signup-form__btn')

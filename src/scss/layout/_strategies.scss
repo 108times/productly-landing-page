@@ -1,0 +1,35 @@
+
+.strategies {
+
+  position: relative;
+  left: 2px;
+  margin-top: rem(108);
+  padding-bottom: rem(105);
+
+
+  &__title {
+    font-size: rem(34);
+    line-height: em(51,34px);
+    font-weight: 700;
+    color: $text-color-2;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    margin-top: em(10);
+    line-height: em(26);
+    font-weight: 500;
+  }
+
+  &__slider {
+    margin-top: rem(54);
+  }
+
+  &__slide {
+  }
+
+  &__pagination {
+    margin-top: rem(32);
+    position: relative !important;
+  }
+}
