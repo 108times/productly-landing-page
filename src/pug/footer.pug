@@ -2,17 +2,17 @@
 footer.footer
     .container.footer__container
         .row.footer__row
-            .col-md-3.footer__column
+            .col-md-3.col-sm-12.footer__column
                 +logo('footer__logo', logo)
-            .col-md-3.footer__column
+            .col-md-3.col-sm-4.footer__column
                 .footer__menu-container
                     h5.footer__menu-title #{data.menu_1.title}
                     +menu('footer__menu', data.menu_1)
-            .col-md-2.footer__column
+            .col-md-2.col-sm-4.footer__column
                 .footer__menu-container
                     h5.footer__menu-title #{data.menu_2.title}
                     +menu('footer__menu', data.menu_2)
-            .col-md-4.footer__column
+            .col-md-4.col-sm-4.footer__column
                 .signup-form.footer__signup-form
                     h5.signup-form__title #{data.signup_form.title}
                     +input('signup-form__input','text',data.signup_form.input_placeholder)

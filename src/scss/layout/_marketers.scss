@@ -1,8 +1,7 @@
 
 .marketers {
-  margin-top: rem(90);
-  &__container {
-  }
+  margin-top: rem(94  );
+
 
   &__row {
     .col:nth-of-type(1) {
@@ -10,20 +9,24 @@
     }
   }
 
-  &__left {
-  }
 
 
   .description {
     &__text {
       max-width: rem(486);
+      @include mq(lg,max) {
+        &__text {
+          max-width: 90vh;
+        }
+      }
+    }
+
+    @include mq(md,max) {
+      padding-top: 0;
+
     }
   }
-  &__advantages {
-  }
 
-  &__advantage {
-  }
 
   &__right {
     position: relative;

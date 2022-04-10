@@ -69,12 +69,14 @@
     line-height: em(28,18px);
     text-align: left;
     width: 83%;
+    @include mq(lg, max) {
+      font-size:max(2vh);
+    }
+
     @include mq(md, max) {
-      font-size:max(2.8vh, 2.8vw);
+      font-size:max(2.8vh);
       width: 100%;
       margin-inline: rem(10);
-
-
     }
   }
 
@@ -84,9 +86,19 @@
     margin-top: rem(55);
     display: flex;
     gap: rem(30);
+
+    @include mq(lg, max) {
+      position: relative;
+      width: 200%;
+      .btn {
+        font-size: 2.2vh;
+        padding-block: 1.5vh;
+      }
+    }
     @include mq(md, max) {
       margin-top: 0;
       justify-content: center;
+      width: 100%;
       .btn {
         font-size: 2.8vh;
         padding-block: 1.5vh;

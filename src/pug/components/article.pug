@@ -1,6 +1,6 @@
 mixin article(className, data)
-    div.article(class=className)
-        img.article__img(src=data.image.url, alt=data.image.url)
+    a.article(class=className href=data.href)
+        img.article__img(src=data.image.url, alt='Article image name')
         .article__publication-info.
             By #[span.article__author #{data.author}] | #{data.date}
-        h4.article__title(class=(data.highlight ? 'highlight' : '')) #{data.title}
+        h5.article__title(class=(data.highlight ? 'highlight' : '') ) #{data.title}

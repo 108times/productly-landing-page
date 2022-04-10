@@ -21,7 +21,7 @@
   &__right {
     padding-left: rem(88);
 
-    @include mq(md, max) {
+    @include mq(lg, max) {
       padding-left: rem(9.75);
     }
   }
@@ -33,16 +33,13 @@
 
   &__advantages {
     padding-top: 0;
-
-    @include mq(md, max) {
-      left: rem(20);
-
+    @include mq(lg, max) {
       .icon-advantage {
         max-width: 100%;
-        margin-bottom: rem(30);
 
         &__text {
           font-size: 2.5vh;
+          line-height: 3vh;
         }
 
         &__icon {
@@ -54,6 +51,17 @@
             height: inherit;
           }
         }
+      }
+    }
+    @include mq(md, max) {
+      left: rem(20);
+
+      .icon-advantage {
+        margin-bottom: rem(30);
+
+
+
+
       }
     }
 

@@ -1,6 +1,7 @@
 .section-items {
   padding-top: rem(2);
-
+  position: relative;
+  z-index: 10;
   @include mq(lg, max) {
     position: relative;
     width: 85vw;

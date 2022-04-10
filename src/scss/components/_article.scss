@@ -1,12 +1,17 @@
 .article {
 
-  &__img {
-  }
-
+  text-decoration: none;
+  &:hover &__title{
+      text-decoration: underline;
+    }
   &__publication-info {
     line-height: em(28);
     font-weight: 400;
     margin-top: rem(21);
+    color: $text-color;
+    @include mq(md,max) {
+      font-size: 2.4vh;
+    }
   }
 
   &__title {
@@ -17,6 +22,11 @@
     color: $text-color-2;
     max-width: rem(294);
 
+
+    @include mq(md,max) {
+      font-size: 3.4vh;
+      max-width: rem(444);
+    }
     &.highlight {
       color: $brand-color
     }

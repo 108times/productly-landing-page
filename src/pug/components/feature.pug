@@ -1,7 +1,7 @@
 mixin feature(className,data)
     .feature(class=className)
         .feature__icon
-            img.feature__icon-core(src=data.icon, rel=data.icon)
-            img.feature__icon-shadow(src=data.icon_shadow, rel=data.icon_shadow)
+            img.feature__icon-core(src=data.icon, alt='Icon shadow icon')
+            img.feature__icon-shadow(src=data.icon_shadow, alt='Icon shadow icon shadow')
         h3.feature__title #{data.title}
         p.feature__text #{data.text}

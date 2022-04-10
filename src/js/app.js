@@ -2,7 +2,11 @@ import './swiper.js';
 import {multipleRippleEffect} from './ripple/ripple.js';
 import {scrollTo} from './utils.js';
 
+
+// TODO animations
+
 const enableRipple = () => {
+
   document.addEventListener('mousedown', function (event) {
     if (event.target.dataset.effect !== 'ripple') return 1;
     multipleRippleEffect(event, {onRippleStart});

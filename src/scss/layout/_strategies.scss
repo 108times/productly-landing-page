@@ -5,7 +5,26 @@
   left: 2px;
   margin-top: rem(108);
   padding-bottom: rem(104);
+  @include mq(lg,max) {
+    margin-top: rem(308);
 
+  }
+  @include mq(md,max) {
+    padding-bottom: 0;
+    min-height: initial;
+  }
+  @include mq(sm,max) {
+    &__container {
+      min-height: 90vh;
+    }
+  }
+  @include mq(sm,max) {
+    margin-top: 10vh;
+    @media screen and (max-height: 793px) {
+      margin-top: 65vw;
+    }
+
+  }
 
   &__title {
     font-size: rem(34);
@@ -13,20 +32,35 @@
     font-weight: 700;
     color: $text-color-2;
     margin-bottom: 0;
+    @include mq(md, max) {
+      font-size: 4.4vh;
+    }
   }
 
   &__text {
     margin-top: em(10);
     line-height: em(26);
     font-weight: 500;
+    @include mq(md, max) {
+    font-size: 2.4vh;
+  }
+
   }
 
   &__slider {
     margin-top: rem(54);
+
   }
 
   &__slide {
+    @include mq(md,max) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
+
 
   &__pagination {
     margin-top: rem(32);

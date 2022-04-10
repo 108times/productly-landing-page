@@ -5,6 +5,9 @@
   align-items: center;
   gap:rem(30);
   position: relative;
+  &:nth-child(1) {
+    max-width: rem(433);
+  }
   &__icon{
     width: 35px;
     height: 35px;

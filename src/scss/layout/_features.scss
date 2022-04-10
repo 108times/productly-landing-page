@@ -49,6 +49,9 @@
       font-size: 4.2vh;
       padding-bottom: 0;
     }
+    @include mq(xs, max) {
+      font-size: 3.2vh;
+    }
   }
 
   &__background {
@@ -100,7 +103,7 @@
           text-align: center;
         }
         &__text {
-          font-size: 2.1vh;
+          font-size: 2.4vh;
           text-align: center;
         }
         &__icon {
@@ -113,7 +116,9 @@
 
       @include mq(xs, max) {
         max-width: 100%;
-
+        &__text {
+          font-size: 2vh;
+        }
       }
 
     }
@@ -130,6 +135,11 @@
     position: relative;
     @include mq(lg, max) {
       margin-top: rem(40);
+      &-btn {
+        font-size: 2.2vh;
+        padding-block: em(10);
+        top: rem(-30);
+      }
     }
     &-btn {
       margin-top: rem(16);
@@ -140,6 +150,7 @@
       position: relative;
       left: rem(10);
       @include mq(sm, max) {
+        top: initial;
         font-size: 2.8vh;
         padding-block: em(10);
       }

@@ -1,20 +1,39 @@
-
 .testimonials {
-  margin-top: rem(128);
+  margin-top: rem(133);
   position: relative;
   padding-bottom:rem(300);
+  @include mq(lg, max) {
+
+    padding-bottom:rem(0);
+
+  }
+  @include mq(md, max) {
+    min-height: 100vh;
+  }
+  @include mq(sm, max) {
+    padding-bottom:rem(70);
+  }
   &__background {
     transform: rotate(180deg);
     top: 0;
     z-index: 1;
-    left: -50%;
+    left: initial;
   }
 
   &__container {
     padding-top: rem(230);
 
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    @include mq(sm, max) {
+      padding-top: rem(15);
+      justify-content: flex-start;
+      min-height: initial;
+    }
   }
 
   &__description {
@@ -35,6 +54,12 @@
     color: $text-color-2;
     margin-top: rem(12);
     margin-bottom: rem(21);
+   @include mq(sm,max) {
+     text-align: center;
+   }
+    @include mq(sm, max) {
+      font-size: min(3.8vh,10vw);
+    }
   }
 
   &__text {
@@ -44,26 +69,64 @@
     text-align: center;
     margin-top: 0;
     color: $blue;
+    @include mq(lg, max) {
+      font-size: 1.8vh;
+    }
+    @include mq(md, max) {
+      font-size: 2.4vh;
+    }
+
+
+
   }
 
   &__cta-button {
     min-height: em(53);
     padding-inline: em(29) em(33) ;
     margin-top: rem(30);
-
+    @include mq(sm, max) {
+      font-size: 2.8vh;
+    }
+    @include mq(xs, max) {
+      font-size: 1.8vh;
+    }
   }
   &__workers {
     position: absolute;
-  width: 100%;
+    width: 100%;
     top: 0;
     left: 0;
-    height: 100%;
-  }
+    @include mq(md, max) {
 
+    }
+    @include mq(sm, max) {
+      top: min(20vw,12vh);
+      height: 50vh;
+    }
+    @include mq(xs, max) {
+
+    }
+  }
+  .worker {
+    @include mq(xs, max) {
+      font-size: 1vh;
+
+      &__avatar {
+        bottom: -94%;
+      }
+    }
+  }
 
   .worker.worker-1 {
     top: rem(192);
     left: rem(-19);
+    @include mq(md, max) {
+      top: rem(172);
+    }
+
+    @include mq(sm, max) {
+      top: rem(372);
+    }
   }
 
   .worker.worker-2 {
@@ -72,7 +135,15 @@
     .worker__message-body {
         padding-inline: rem(31.5) rem(30.5);
       padding-block: rem(16.5) rem(14);
-
+    }
+    @include mq(md, max) {
+      top: rem(573.5);
+      left: rem(58);
+    }
+    @include mq(sm, max) {
+      z-index: 20;
+      top: rem(593.5);
+      left: rem(58);
     }
   }
   .worker.worker-3 {
@@ -82,6 +153,16 @@
       padding-inline: rem(24.5) rem(22.5);
       padding-block: rem(15.5) rem(14);
     }
+    @include mq(md, max) {
+      top: rem(713.5);
+      left: rem(185);
+    }
+    @include mq(sm, max) {
+      top: rem(772);
+      right: rem(-14);
+      left: initial;
+    }
+  }
   }
   .worker.worker-4, .worker.worker-5  {
     .worker__message {
@@ -98,16 +179,33 @@
         right: rem(18) // 36;
       }
     }
+
   }
   .worker.worker-4 {
     top: rem(450);
     right: rem(-15.5);
-
-
+    @include mq(md, max) {
+      top: rem(572);
+      right: rem(-14);
+    }
+    @include mq(sm, max) {
+      top: rem(872);
+      right: rem(79);
+    }
+    @include mq(xs, max) {
+      right:5%;
+    }
   }
   .worker.worker-5 {
     top: rem(126.5);
     right: rem(79);
-  }
 
-}
+    @include mq(md, max) {
+      top: rem(96.5);
+    }
+
+    @include mq(sm, max) {
+      top: rem(496.5);
+      right: rem(-9);
+    }
+  }
