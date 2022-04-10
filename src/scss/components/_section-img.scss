@@ -1,0 +1,14 @@
+.section-img {
+  position: relative;
+  @include mq(md, max) {
+    inset: initial;
+    left: 0;
+    transform: scale(0.75);
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}

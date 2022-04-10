@@ -1,0 +1,7 @@
+.productly-resp-menu{
+  &.resp-menu {
+    @include mq(md, min) {
+      display: none;
+    }
+  }
+}

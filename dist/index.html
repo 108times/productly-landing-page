@@ -9,31 +9,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productly</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="description" content="Productly landing page">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220410155133">
   </head>
   <body>
+    <!-- navigation-->
+    <header class="navigation">
+      <div class="container navigation__container">
+        <nav class="navigation__nav"><a class="logo navigation__logo" href="/"><img class="logo__image" src="./img/Logo.svg" alt="Logo"/></a>
+          <div class="menu-wrapper">
+            <ul class="menu navigation__menu menu--horizontal">
+              <li class="menu__item"><a class="menu__link" href="/product/">Product</a></li>
+              <li class="menu__item"><a class="menu__link" href="/customers/">Customers</a></li>
+              <li class="menu__item"><a class="menu__link" href="/pricing/">Pricing</a></li>
+              <li class="menu__item"><a class="menu__link" href="/resources/">Resources</a></li>
+            </ul>
+          </div>
+          <div class="navigation__buttons">
+            <button class="btn btn--secondary " data-effect="ripple">Sign In
+            </button>
+            <button class="btn btn--primary " data-effect="ripple">Sign Up
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+        <div class="resp-menu productly-resp-menu">
+          <label class="resp-menu__wrapper productly-resp-menu">
+            <input type="checkbox"><span class="resp-menu__hamburger"><span class="resp-menu__hamburger-inner"></span></span><span class="resp-menu__hamburger-shadow"></span>
+            <ul class="resp-menu__menu">
+              <li class="resp-menu__item"><a class="resp-menu__link" href="/product/">Product</a></li>
+              <li class="resp-menu__item"><a class="resp-menu__link" href="/customers/">Customers</a></li>
+              <li class="resp-menu__item"><a class="resp-menu__link" href="/pricing/">Pricing</a></li>
+              <li class="resp-menu__item"><a class="resp-menu__link" href="/resources/">Resources</a></li>
+              <li>
+                <button class="btn btn--secondary " data-effect="ripple">Sign In
+                </button>
+              </li>
+              <li>
+                <button class="btn btn--primary " data-effect="ripple">Sign Up
+                </button>
+              </li>
+            </ul>
+          </label>
+        </div><span class="go-up productly-go-up" data-effect="ripple"></span>
+    <!-- modal-->
+    <div class="modal hidden">
+      <div class="modal-body"></div>
+    </div>
     <main class="main">
-      <!-- navigation-->
-      <header class="navigation">
-        <div class="container navigation__container">
-          <nav class="navigation__nav"><a class="logo navigation__logo" href="/"><img class="logo__image" src="./img/Logo.svg" alt="Logo"/></a>
-            <div class="menu-wrapper">
-              <ul class="menu navigation__menu menu--horizontal">
-                <li class="menu__item"><a class="menu__link" href="/product/">Product</a></li>
-                <li class="menu__item"><a class="menu__link" href="/customers/">Customers</a></li>
-                <li class="menu__item"><a class="menu__link" href="/pricing/">Pricing</a></li>
-                <li class="menu__item"><a class="menu__link" href="/resources/">Resources</a></li>
-              </ul>
-            </div>
-            <div class="navigation__buttons">
-              <button class="btn btn--secondary " data-effect="ripple">Sign In
-              </button>
-              <button class="btn btn--primary " data-effect="ripple">Sign Up
-              </button>
-            </div>
-          </nav>
-        </div>
-      </header>
       <!-- header-->
       <section class="site-section header">
         <div class="container header__container">
@@ -43,10 +68,12 @@
               <p class="header__text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
               <div class="header__buttons">
                 <button class="btn btn--primary " data-effect="ripple">Get started
-                </button><a class="link" href="#"><span class="icon-container"><svg class="icon icon__triangle" width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg" ><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8515 8.53027C16.591 8.96525 16.591 10.0346 15.8515 10.4696L2.19537 18.5027C1.44541 18.9438 0.499975 18.4031 0.499975 17.533L0.499975 1.46692C0.499975 0.596824 1.44541 0.0560866 2.19537 0.497241L15.8515 8.53027Z" fill="#FF9900"/></svg></span>Watch the Video</a>
+                </button><a class="link" href="#" data-effect="ripple"><span class="icon-container"><svg class="icon icon__triangle" width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg" ><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8515 8.53027C16.591 8.96525 16.591 10.0346 15.8515 10.4696L2.19537 18.5027C1.44541 18.9438 0.499975 18.4031 0.499975 17.533L0.499975 1.46692C0.499975 0.596824 1.44541 0.0560866 2.19537 0.497241L15.8515 8.53027Z" fill="#FF9900"/></svg></span>Watch the Video</a>
               </div>
             </div>
-            <div class="col-md-6 header__right"> <img class="section-img header__img" src="./img/header.svg" alt="Header image"></div>
+            <div class="col-md-6 header__right">
+              <div class="section-img__wrapper"><img class="section-img header__img" src="./img/header.svg" alt="Header image"/></div>
+            </div>
           </div>
         </div>
       </section>
@@ -108,7 +135,9 @@
                 </div>
               </div>
             </div>
-            <div class="col professionals__right"><img class="section-img professionals__img" src="./img/professionals.svg" alt="Professionals image"></div>
+            <div class="col professionals__right">
+              <div class="section-img__wrapper"><img class="section-img professionals__img" src="./img/professionals.svg" alt="Professionals image"/></div>
+            </div>
           </div>
         </div>
       </section>
@@ -116,7 +145,9 @@
       <section class="site-section managers">
         <div class="container managers__container">
           <div class="row managers__row">
-            <div class="col managers__left"><img class="section-img managers__img" src="./img/managers.svg" alt="Professionals image"></div>
+            <div class="col managers__left">
+              <div class="section-img__wrapper"><img class="section-img managers__img" src="./img/managers.svg" alt="Professionals image"/></div>
+            </div>
             <div class="col managers__right">
               <div class="description managers__description">
                 <h6 class="description__pretitle">Easier decision making for</h6>
@@ -178,45 +209,47 @@
                 </div>
               </div>
             </div>
-            <div class="col marketers__right"><img class="section-img marketers__img" src="./img/marketers.svg" alt="Marketers image"></div>
+            <div class="col marketers__right">
+              <div class="section-img__wrapper"><img class="section-img marketers__img" src="./img/marketers.svg" alt="Marketers image"/></div>
+            </div>
           </div>
         </div>
       </section>
       <!-- testimonials-->
       <section class="site-section testimonials">
-        <div class="container testimonials__container">
-          <div class="testimonials__workers">
-            <div class="worker worker-1 testimonials__worker worker--left-aligned"><picture><source srcset="./img/avatar_1.webp" type="image/webp"><img class="worker__avatar" src="./img/avatar_1.jpg" alt="Avatar 1"/></picture>
-              <div class="worker__message"><span class="worker__message-circle-1"></span><span class="worker__message-circle-2"></span>
-                <p class="worker__message-body">I can take care of your pitch</p>
-              </div>
-            </div>
-            <div class="worker worker-2 testimonials__worker worker--right-aligned"><picture><source srcset="./img/avatar_2.webp" type="image/webp"><img class="worker__avatar" src="./img/avatar_2.jpg" alt="Avatar 2"/></picture>
-              <div class="worker__message"><span class="worker__message-circle-1"></span><span class="worker__message-circle-2"></span>
-                <p class="worker__message-body">I can design you website</p>
-              </div>
-            </div>
-            <div class="worker worker-3 testimonials__worker worker--right-aligned"><picture><source srcset="./img/avatar_3.webp" type="image/webp"><img class="worker__avatar" src="./img/avatar_3.jpg" alt="Avatar 3"/></picture>
-              <div class="worker__message"><span class="worker__message-circle-1"></span><span class="worker__message-circle-2"></span>
-                <p class="worker__message-body">I will define the profile of your users</p>
-              </div>
-            </div>
-            <div class="worker worker-4 testimonials__worker worker--right-aligned"><picture><source srcset="./img/avatar_4.webp" type="image/webp"><img class="worker__avatar" src="./img/avatar_4.jpg" alt="Avatar 4"/></picture>
-              <div class="worker__message"><span class="worker__message-circle-1"></span><span class="worker__message-circle-2"></span>
-                <p class="worker__message-body">I can prototype your app</p>
-              </div>
-            </div>
-            <div class="worker worker-5 testimonials__worker worker--right-aligned"><picture><source srcset="./img/avatar_5.webp" type="image/webp"><img class="worker__avatar" src="./img/avatar_5.jpg" alt="Avatar 5"/></picture>
-              <div class="worker__message"><span class="worker__message-circle-1"></span><span class="worker__message-circle-2"></span>
-                <p class="worker__message-body">I can help marketing strategy</p>
-              </div>
-            </div>
-          </div><img class="background testimonials__background" src="./img/gradient-bg.svg" alt="Background">
+        <div class="container testimonials__container"><img class="background testimonials__background" src="./img/gradient-bg.svg" alt="Background">
           <div class="testimonials__description">
             <h1 class="testimonials__title">Need a super hero?</h1>
             <p class="testimonials__text">Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page, Ux/UI?</p>
             <button class="btn btn--primary testimonials__cta-button" data-effect="ripple">Contact our expert
             </button>
+          </div>
+          <div class="testimonials__workers">
+            <div class="worker worker-1 testimonials__worker worker--left-aligned"><img class="worker__avatar" src="./img/avatar_1.jpg" alt="Avatar 1"/>
+              <div class="worker__message"><span class="worker__message-circle-1"></span><span class="worker__message-circle-2"></span>
+                <p class="worker__message-body">I can take care of your pitch</p>
+              </div>
+            </div>
+            <div class="worker worker-2 testimonials__worker worker--right-aligned"><img class="worker__avatar" src="./img/avatar_2.jpg" alt="Avatar 2"/>
+              <div class="worker__message"><span class="worker__message-circle-1"></span><span class="worker__message-circle-2"></span>
+                <p class="worker__message-body">I can design you website</p>
+              </div>
+            </div>
+            <div class="worker worker-3 testimonials__worker worker--right-aligned"><img class="worker__avatar" src="./img/avatar_3.jpg" alt="Avatar 3"/>
+              <div class="worker__message"><span class="worker__message-circle-1"></span><span class="worker__message-circle-2"></span>
+                <p class="worker__message-body">I will define the profile of your users</p>
+              </div>
+            </div>
+            <div class="worker worker-4 testimonials__worker worker--right-aligned"><img class="worker__avatar" src="./img/avatar_4.jpg" alt="Avatar 4"/>
+              <div class="worker__message"><span class="worker__message-circle-1"></span><span class="worker__message-circle-2"></span>
+                <p class="worker__message-body">I can prototype your app</p>
+              </div>
+            </div>
+            <div class="worker worker-5 testimonials__worker worker--right-aligned"><img class="worker__avatar" src="./img/avatar_5.jpg" alt="Avatar 5"/>
+              <div class="worker__message"><span class="worker__message-circle-1"></span><span class="worker__message-circle-2"></span>
+                <p class="worker__message-body">I can help marketing strategy</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -230,15 +263,15 @@
           <div class="strategies__content">
             <div class="swiper strategies__slider">
               <div class="swiper-wrapper">
-                <div class="article strategies__slide swiper-slide col-md-4"><picture><source srcset="./img/strategy_1.webp" type="image/webp"><img class="article__img" src="./img/strategy_1.jpg" alt="./img/strategy_1.jpg"/></picture>
+                <div class="article strategies__slide swiper-slide col-md-4 col-sm-12"><img class="article__img" src="./img/strategy_1.jpg" alt="./img/strategy_1.jpg"/>
                   <div class="article__publication-info">By <span class="article__author">Abdullah</span> | 03 March 2019</div>
                   <h4 class="article__title">Increasing Prosperity With Positive Thinking</h4>
                 </div>
-                <div class="article strategies__slide swiper-slide col-md-4"><picture><source srcset="./img/strategy_2.webp" type="image/webp"><img class="article__img" src="./img/strategy_2.jpg" alt="./img/strategy_2.jpg"/></picture>
+                <div class="article strategies__slide swiper-slide col-md-4 col-sm-12"><img class="article__img" src="./img/strategy_2.jpg" alt="./img/strategy_2.jpg"/>
                   <div class="article__publication-info">By <span class="article__author">Abdullah</span> | 03 March 2019</div>
                   <h4 class="article__title highlight">Motivation Is The First Step To Success</h4>
                 </div>
-                <div class="article strategies__slide swiper-slide col-md-4"><picture><source srcset="./img/strategy_3.webp" type="image/webp"><img class="article__img" src="./img/strategy_3.jpg" alt="./img/strategy_3.jpg"/></picture>
+                <div class="article strategies__slide swiper-slide col-md-4 col-sm-12"><img class="article__img" src="./img/strategy_3.jpg" alt="./img/strategy_3.jpg"/>
                   <div class="article__publication-info">By <span class="article__author">Abdullah</span> | 03 March 2019</div>
                   <h4 class="article__title">Success Steps For Your Personal Or Business Life</h4>
                 </div>
@@ -249,45 +282,45 @@
         </div>
       </section>
       <!-- footer-->
-      <footer class="footer">
-        <div class="container footer__container">
-          <div class="row footer__row">
-            <div class="col-md-3 footer__column"><a class="logo footer__logo" href="/"><img class="logo__image" src="./img/Logo.svg" alt="Logo"/></a>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="row footer__row">
+          <div class="col-md-3 footer__column"><a class="logo footer__logo" href="/"><img class="logo__image" src="./img/Logo.svg" alt="Logo"/></a>
+          </div>
+          <div class="col-md-3 footer__column">
+            <div class="footer__menu-container">
+              <h5 class="footer__menu-title">Quick Links</h5>
+              <ul class="menu footer__menu menu--horizontal">
+                <li class="menu__item"><a class="menu__link" href="/about_us/">About Us</a></li>
+                <li class="menu__item"><a class="menu__link" href="/blog/">Blog</a></li>
+                <li class="menu__item"><a class="menu__link" href="/contact/">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="/FAQ/">FAQ</a></li>
+              </ul>
             </div>
-            <div class="col-md-3 footer__column">
-              <div class="footer__menu-container">
-                <h5 class="footer__menu-title">Quick Links</h5>
-                <ul class="menu footer__menu menu--horizontal">
-                  <li class="menu__item"><a class="menu__link" href="/about_us/">About Us</a></li>
-                  <li class="menu__item"><a class="menu__link" href="/blog/">Blog</a></li>
-                  <li class="menu__item"><a class="menu__link" href="/contact/">Contact</a></li>
-                  <li class="menu__item"><a class="menu__link" href="/FAQ/">FAQ</a></li>
-                </ul>
-              </div>
+          </div>
+          <div class="col-md-2 footer__column">
+            <div class="footer__menu-container">
+              <h5 class="footer__menu-title">Legal Stuff</h5>
+              <ul class="menu footer__menu menu--horizontal">
+                <li class="menu__item"><a class="menu__link" href="/disclaimer/">Disclaimer</a></li>
+                <li class="menu__item"><a class="menu__link" href="/financing/">Financing</a></li>
+                <li class="menu__item"><a class="menu__link" href="/privacy policy/">Privacy Policy</a></li>
+                <li class="menu__item"><a class="menu__link" href="/terms_of_service/">Terms of Service</a></li>
+              </ul>
             </div>
-            <div class="col-md-2 footer__column">
-              <div class="footer__menu-container">
-                <h5 class="footer__menu-title">Legal Stuff</h5>
-                <ul class="menu footer__menu menu--horizontal">
-                  <li class="menu__item"><a class="menu__link" href="/disclaimer/">Disclaimer</a></li>
-                  <li class="menu__item"><a class="menu__link" href="/financing/">Financing</a></li>
-                  <li class="menu__item"><a class="menu__link" href="/privacy policy/">Privacy Policy</a></li>
-                  <li class="menu__item"><a class="menu__link" href="/terms_of_service/">Terms of Service</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-4 footer__column">
-              <div class="signup-form footer__signup-form">
-                <h5 class="signup-form__title">Knowing you're always on the best energy deal.</h5>
-                <input class="input signup-form__input" type="text" placeholder="Enter ypur phone Number" value="" data-effects="ripple"/>
-                <button class="btn btn--primary signup-form__btn" data-effect="ripple">Sign Up Now
-                </button>
-              </div>
+          </div>
+          <div class="col-md-4 footer__column">
+            <div class="signup-form footer__signup-form">
+              <h5 class="signup-form__title">Knowing you're always on the best energy deal.</h5>
+              <input class="input signup-form__input" type="text" placeholder="Enter ypur phone Number" value="" data-effects="ripple"/>
+              <button class="btn btn--primary signup-form__btn" data-effect="ripple">Sign Up Now
+              </button>
             </div>
           </div>
         </div>
-      </footer>
-    </main>
-    <script src="js/app.min.js"></script>
+      </div>
+    </footer>
+    <script src="js/app.min.js?_v=20220410155133"></script>
   </body>
 </html>

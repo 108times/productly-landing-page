@@ -12,13 +12,19 @@
   line-height: em(24);
   transition: background-color $trans-dur-default $trans-time-func-default;
   box-shadow: 0 0 0 0;
+  position: relative;
+
+    &:active {
+
+    }
   &--primary {
     background-color: $brand-color;
-    box-shadow: inset 0 0 0 1px $brand-color;
 
     &:hover {
       background-color: $brand-color-lighter;
     }
+
+
   }
 
   &--secondary {
@@ -29,4 +35,6 @@
       background-color: $secondary-color-lighter;
     }
   }
+
+
 }

@@ -11,9 +11,17 @@ html(lang="en")
   include pug/head
 
   body
+
+    // navigation
+    include pug/navigation
+
+    // modal
+    include pug/sections/modal
+
+
+
+
     main.main
-      // navigation
-      include pug/navigation
 
       // header
       include pug/sections/header
@@ -37,7 +45,8 @@ html(lang="en")
       include pug/sections/strategies
 
       // footer
-      include pug/footer
+
+    include pug/footer
 
 
     script(src="js/app.min.js")

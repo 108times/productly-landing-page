@@ -1,5 +1,5 @@
-mixin link(text,className, href, icon)
-    a.link(href=href)
+mixin link(text,className, href, icon, ripple=true)
+    a.link(href=href, data-effect=(ripple ? 'ripple' : ''))
         if icon !== undefined
           span.icon-container.
             !{icon}

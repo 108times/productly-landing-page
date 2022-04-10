@@ -52,14 +52,19 @@ $max-width: 1110px !default;
 
 /// Breakpoints map
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1124px,
 ) !default;
 
 
+ $hamburger-size: 70px;
+ $hamburger-bg: #fff;
+ $hamburger-box-shadow:0 0 8px 2px rgba(0,0,0,.3);
+ $hamburger-transition:  .5s ease-in-out;
 
-// /// Relative or absolute URL where all assets are served from
+ // /// Relative or absolute URL where all assets are served from
 // /// @type String
 // /// @example scss - When using a CDN
 // ///   $base-url: 'http://cdn.example.com/assets/';

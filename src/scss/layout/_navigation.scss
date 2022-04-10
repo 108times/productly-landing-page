@@ -4,30 +4,55 @@
     width: auto;
   }
   &__container {
-    padding-inline: 0;
   }
   &__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 4.875rem;
+    min-height: rem(78);
+    @include mq(sm, min) {
+      margin-right: rem(-10);
+      margin-left: rem(8);
+    }
+    @include mq(sm, max) {
+      justify-content: center;
+    }
   }
 
   .menu {
     width: rem(451);
-    padding-inline: rem(67) rem(61);
     margin-left: auto;
+    padding-inline: rem(66) rem(61);
+
+    @include mq(lg, max) {
+      width: auto;
+      display: flex;
+      justify-content: center;
+      gap: rem(15);
+      padding-inline: rem(10);
+    }
     &__item {
     }
     &-wrapper {
       flex-grow: 1;
+
+      @include mq(md, max) {
+        display: none;
+      }
     }
+
+
+
   }
 
   &__buttons {
     display: flex;
     gap: 14px;
-  }
+    min-width: rem(227);
+    @include mq(sm, max) {
+      display: none;
+    }
+    }
 }
 
 

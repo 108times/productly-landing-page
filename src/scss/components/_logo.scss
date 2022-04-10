@@ -1,2 +1,6 @@
 .logo {
+
+  @include mq(sm, max) {
+    transform: scale(0.7);
+  }
 }

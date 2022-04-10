@@ -1,0 +1,14 @@
+mixin responsive-menu(className, data)
+    .resp-menu(class=className)
+        label.resp-menu__wrapper(class=className)
+            input(type="checkbox")
+            span.resp-menu__hamburger
+                span.resp-menu__hamburger-inner
+            span.resp-menu__hamburger-shadow
+            ul.resp-menu__menu
+                  each val,key in data.items
+                      li.resp-menu__item
+                          a.resp-menu__link(href=val.link) #{val.text}
+                  li #[+button('Sign In', false)]
+                  li #[+button('Sign Up')]
+

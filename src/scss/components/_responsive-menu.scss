@@ -1,0 +1,139 @@
+@use 'sass:color';
+.resp-menu {
+
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+
+  &__wrapper {
+
+  }
+  input {
+    visibility: hidden;
+  }
+
+  &__hamburger, &__hamburger-shadow {
+    $bg: $hamburger-bg;
+    z-index: 100;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: $hamburger-size;
+    height: $hamburger-size;
+    background: $bg;
+    border-radius: 50% 50% 50% 50%;
+    transition: $hamburger-transition;
+    box-shadow: 0 0 0 0 $bg, 0 0 0 0 $bg;
+    cursor: pointer;
+  }
+  &__hamburger {
+    $bg: #fff;
+    z-index: 150;
+    pointer-events: all;
+
+    &-shadow {
+      //box-shadow: 0 0 14px 3px  color.adjust($brand-color, $alpha: -0.5);
+      box-shadow: $hamburger-box-shadow;
+      transition:all .7s ease-in-out, box-shadow .2s ease-in-out;
+    }
+
+    input:checked + & + &-shadow{
+      box-shadow: 0 0 0 0 #fff;
+      transform: scale(40);
+    }
+
+    input:checked + & + &-shadow + ul{
+      opacity: 1;
+      pointer-events: all;
+    }
+
+
+    $inner-position: translate(calc($hamburger-size / 2) - 15px, calc($hamburger-size / 2) - 1px);
+    &-inner {
+      position: relative;
+      width: 30px;
+      transform: $inner-position;
+      height: 4px;
+      background: $brand-color;
+      display: block;
+      transform-origin: center;
+      transition: .5s ease-in-out;
+      border-radius: 25px;
+
+      &::after, &::before {
+        transition: .5s ease-in-out;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 70%;
+        height: 100%;
+        background: $brand-color;
+        border-radius: 25px;
+      }
+
+      &::after {
+        top: -10px;
+      }
+
+      &::before {
+        bottom: -10px;
+      }
+    }
+
+
+
+
+    input:checked + & &-inner{
+      transform: $inner-position rotate(-45deg);
+
+      &::after {
+        transform: translate(7px, 2px) rotate(90deg);
+        //top: -20px;
+        width: 50%;
+
+      }
+
+      &::before {
+        transform: translate(7px, -2px) rotate(90deg);
+        //bottom: 0;
+        width: 50%;
+      }
+    }
+  }
+
+  &__menu {
+    @extend .menu;
+
+    z-index: 250;
+    position: relative;
+    //transform: translate(-50%);
+    transition: .25s .3s ease-in-out;
+    padding-left: 0;
+    height: 70vh;
+    top: 15vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+
+  }
+
+
+
+  &__link {
+    margin-bottom: 1em;
+    display: block;
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  .btn {
+    font-size: 18px;
+    @include mq(sm,min) {
+      display: none;
+    }
+  }
+}
+

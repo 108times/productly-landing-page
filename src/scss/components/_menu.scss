@@ -6,14 +6,15 @@
   &__item {
     font-size: rem(14);
     line-height: 2em;
+    position: relative;
+
   }
 
   &__link {
     text-decoration: none;
-    color: $text-color;
+    color: $text-color-2;
     font-size: inherit;
     transition: color $trans-dur-default $trans-time-func-default;
-
     &:hover {
       color: $brand-color
     }

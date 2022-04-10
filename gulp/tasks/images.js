@@ -36,6 +36,10 @@ export const images = () => {
       // svg
       .pipe(app.gulp.src(app.path.src.images))
       .pipe(app.gulp.dest(app.path.build.images))
+        // favicon
+        .pipe(app.gulp.src(`${app.path.srcFolder}/*.ico`))
+        .pipe(app.gulp.dest(app.path.build.images))
+
       .pipe(app.plugins.browserSync.stream())
   );
 };

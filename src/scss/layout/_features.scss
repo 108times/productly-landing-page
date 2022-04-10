@@ -21,6 +21,10 @@
     font-weight: 700;
     color: $text-color-2;
     padding-inline: rem(308) rem(290);
+
+    @include mq(medium, max) {
+      padding-inline: 0;
+    }
   }
 
   &__background {

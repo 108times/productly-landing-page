@@ -6,7 +6,8 @@
   text-decoration: underline $brand-color;
   opacity: 1;
   transition: opacity $trans-dur-default $trans-time-func-default;
-
+  position: relative;
+  border-radius: 0;
   &:hover {
     opacity: 0.5;
   }

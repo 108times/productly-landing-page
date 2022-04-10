@@ -2,6 +2,9 @@
   padding-top: rem(41);
   // .header__container
 
+  @include mq(sm, max) {
+    padding-top: 0;
+  }
   &__container {
     padding-inline: 0;
   }

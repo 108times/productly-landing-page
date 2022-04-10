@@ -8,4 +8,4 @@ section.site-section.professionals
                     each val,key in data.items
                         +advantage('professionals__advantage', val)
             .col.professionals__right
-                img.section-img.professionals__img(src=data.image.url, alt=data.image.alt)
+                +section-image('professionals__img', data)

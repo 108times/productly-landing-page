@@ -11,6 +11,12 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  overflow: hidden;
+  padding-top: rem(20);
+  position: relative;
+}
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -23,18 +29,10 @@ html {
   box-sizing: inherit;
 }
 
-/**
- * Basic styles for links
- */
-// a {
-//   color: $brand-color;
-//   text-decoration: none;
 
-//   @include on-event {
-//     color: $text-color;
-//     text-decoration: underline;
-//   }
-// }
 :root {
   font-size: $font-size;
+  @include mq(sm, max) {
+    font-size: 13px;
+  }
 }

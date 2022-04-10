@@ -1,9 +1,9 @@
 .footer {
-
+  margin-right: rem(-10);
+  margin-left: rem(8);
   &__container {
     border-top: 1px solid $secondary-color;
-    padding-top: rem(103);
-    padding-inline: 0;
+    padding-top: rem(100);
   }
 
   &__menu-container {

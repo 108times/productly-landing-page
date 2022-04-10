@@ -1,0 +1,49 @@
+.go-up {
+  position: fixed;
+  z-index: 30;
+  width: $hamburger-size;
+  height: $hamburger-size;
+  background: $hamburger-bg;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: $hamburger-box-shadow;
+  transition: $hamburger-transition;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+
+  @include mq(md, min) {
+    right: 50px;
+    bottom: 50px;
+  }
+
+  &:hover {
+    background: rgba(0,0,0,0.05);
+  }
+
+  &::after,&::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    width: 35%;
+    height: 4px;
+    border-radius: 25px;
+    background: $brand-color;
+  }
+
+  &::after {
+    left: 21%;
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    right: 21%;
+    transform: rotate(45deg);
+  }
+
+  &.visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

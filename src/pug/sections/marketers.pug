@@ -8,4 +8,5 @@ section.site-section.marketers
                     each val,key in data.items
                         +advantage('marketers__advantage', val)
             .col.marketers__right
-                img.section-img.marketers__img(src=data.image.url, alt=data.image.alt)
+                +section-image('marketers__img', data)
+

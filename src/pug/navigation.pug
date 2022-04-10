@@ -1,3 +1,4 @@
+include ../pug/components/responsive-menu
 - var data = navigation
 header.navigation
     .container.navigation__container
@@ -8,4 +9,5 @@ header.navigation
             .navigation__buttons
                 +button('Sign In', false)
                 +button('Sign Up')
-
++responsive-menu('productly-resp-menu', data.menu)
++go-up('productly-go-up')
