@@ -2,9 +2,9 @@
 section.site-section.managers
     .container.managers__container
         .row.managers__row
-            .col.managers__left
+            .col.site-section__left.managers__left
                 +section-image('managers__img', data)
-            .col.managers__right
+            .col.site-section__right.managers__right
                 +description('managers__description', data)
                 .section-items.managers__advantages
                     each val,key in data.items

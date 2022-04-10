@@ -1,5 +1,14 @@
 .navigation {
+  @include mq(md, max) {
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+  }
 
+  @include mq(sm, max) {
+    width: auto;
+
+  }
   &__logo {
     width: auto;
   }

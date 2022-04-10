@@ -6,6 +6,7 @@ mixin responsive-menu(className, data)
                 span.resp-menu__hamburger-inner
             span.resp-menu__hamburger-shadow
             ul.resp-menu__menu
+                  li #[+logo('resp-menu__logo', logo)]
                   each val,key in data.items
                       li.resp-menu__item
                           a.resp-menu__link(href=val.link) #{val.text}

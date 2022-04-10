@@ -2,11 +2,11 @@
 section.site-section.marketers
     .container.marketers__container
         .row.marketers__row
-            .col.marketers__left
+            .col.site-section__left.marketers__left
                 +description('marketers__description', data)
                 .section-items.marketers__advantages
                     each val,key in data.items
                         +advantage('marketers__advantage', val)
-            .col.marketers__right
+            .col.site-section__right.marketers__right
                 +section-image('marketers__img', data)
 

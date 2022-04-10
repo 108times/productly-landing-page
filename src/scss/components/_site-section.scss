@@ -1,0 +1,57 @@
+.site-section {
+  width: 100%;
+  position: relative;
+  @include mq(md, max) {
+    min-height: 100vh;
+
+    .row {
+      max-height: 100vh;
+    }
+
+
+
+    }
+  &.professionals ,  &.marketers {
+    @include mq(md, max) {
+      & .site-section__right {
+        flex: 3;
+      }
+    }
+    .row {
+      @include mq(lg, max) {
+        flex-direction: column-reverse;
+      }
+      @include mq(md, max) {
+        flex-direction: row;
+      }
+      @include mq(sm, max) {
+        .site-section__right {
+          order: 1;
+        }
+        .site-section__left {
+          order:2
+        }
+    }
+    }
+
+
+    &.managers {
+      & .site-section__left {
+        flex: 3;
+      }
+
+    }
+    &.professionals ,  &.marketers, &.managers {
+        @include mq(sm, max) {
+          .row {
+            max-height: initial;
+          }
+        }
+    }
+
+  }
+  .container {
+
+  }
+
+}

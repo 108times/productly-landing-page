@@ -14,38 +14,16 @@
   }
 
   &__right {
-    position: relative;
   }
 
   // .professionals__img
 
   &__img {
     position: relative;
-    left: rem(15.2);
-    top: -1px;
+    @include mq(lg, min) {
+      left: rem(8.2);
+      top: -1px;
+    }
+
   }
-}
-.contianer {
-}
-.description {
-}
-.pretitle {
-}
-.title {
-}
-.text {
-}
-.advantage {
-
-  // .advantage__title
-
-  &__title {
-  }
-
-  // .advantage__text
-
-  &__text {
-  }
-}
-.section-img {
 }

@@ -1,3 +1,18 @@
 .section-items {
   padding-top: rem(2);
+
+  @include mq(lg, max) {
+    position: relative;
+    width: 85vw;
+  }
+  @include mq(md, max) {
+    position: absolute;
+    width: 95vw;
+    bottom: 0;
+  }
+
+  @include mq(sm, max) {
+    position: relative;
+    width: 85vw;
+  }
 }

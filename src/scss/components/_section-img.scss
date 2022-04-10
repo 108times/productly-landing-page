@@ -3,12 +3,18 @@
   @include mq(md, max) {
     inset: initial;
     left: 0;
-    transform: scale(0.75);
+    max-width: 100%;
+    max-height: 100%;
   }
 
   &__wrapper {
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
+    @include mq(md, max) {
+        min-width:40vw;
+    }
+
   }
 }

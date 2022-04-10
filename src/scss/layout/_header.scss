@@ -2,14 +2,50 @@
   padding-top: rem(41);
   // .header__container
 
-  @include mq(sm, max) {
-    padding-top: 0;
+  @include mq(md, max) {
+    padding-top:0;
+    padding-bottom: rem(30);
   }
   &__container {
     padding-inline: 0;
   }
 
+  &__left {
+    @include mq(md, max) {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-bottom: rem(20);
+    }
+  }
 
+  // .header__right
+  &__right {
+    padding-inline: 0;
+    position: relative;
+    @include mq(md, max) {
+     order: 1;
+      //max-height: 50%;
+    }
+    .section-img {
+      left: rem(-14);
+      top: -11px;
+
+      @include mq(lg,max) {
+        transform: scale(0.8);
+      }
+      @include mq(md,max) {
+        transform: scale(0.7);
+      }
+      @include mq(sm,max) {
+        transform: scale(0.8);
+      }
+      &__wrapper {
+        height: 100%;
+      }
+    }
+  }
   // .header__title
 
   &__title {
@@ -18,6 +54,10 @@
     line-height: em(54, 44px);
     font-size: rem(44);
     margin-top: rem(73);
+    @include mq(md, max) {
+      margin-top: rem(15);
+      font-size: 4.2vh;
+    }
   }
 
   // .header__text
@@ -29,6 +69,13 @@
     line-height: em(28,18px);
     text-align: left;
     width: 83%;
+    @include mq(md, max) {
+      font-size:max(2.8vh, 2.8vw);
+      width: 100%;
+      margin-inline: rem(10);
+
+
+    }
   }
 
   // .header__buttons
@@ -37,6 +84,21 @@
     margin-top: rem(55);
     display: flex;
     gap: rem(30);
+    @include mq(md, max) {
+      margin-top: 0;
+      justify-content: center;
+      .btn {
+        font-size: 2.8vh;
+        padding-block: 1.5vh;
+      }
+    }
+    @include mq(xs, max) {
+      .btn {
+        font-size: 2.2vh;
+        padding-block: .5vh;
+      }
+    }
+
 
     .btn {
       min-height: rem(53);
@@ -64,17 +126,6 @@
     }
   }
 
-  // .header__right
-  &__right {
-    padding-inline: 0;
-    position: relative;
-  }
 
-  // .header__img
 
-  &__img {
-    position: relative;
-    top: -11px;
-    left: -34px;
-  }
 }

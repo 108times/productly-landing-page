@@ -9,5 +9,5 @@ section.site-section.features
             .row.features__items
                 each val,key in data.items
                     +feature('features__item col', val)
-
-            +button('SIGN UP NOW')(class='features__cta')
+        .features__cta
+            +button('SIGN UP NOW')(class='features__cta-btn')

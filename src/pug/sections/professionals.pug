@@ -2,10 +2,10 @@
 section.site-section.professionals
     .container.professionals__container
         .row.professionals__row
-            .col.professionals__left
+            .col.site-section__left.professionals__left
                 +description('professionals__description', data)
                 .section-items.professionals__advantages
                     each val,key in data.items
                         +advantage('professionals__advantage', val)
-            .col.professionals__right
+            .col.site-section__right.professionals__right
                 +section-image('professionals__img', data)
