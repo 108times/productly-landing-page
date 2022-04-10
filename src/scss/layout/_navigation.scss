@@ -13,6 +13,9 @@
     width: auto;
   }
   &__container {
+    @include mq(sm, max) {
+      min-height: initial;
+    }
   }
   &__nav {
     display: flex;

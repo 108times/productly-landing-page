@@ -35,6 +35,9 @@
     @include mq(md, max) {
       font-size: 4.4vh;
     }
+    @include mq(sm, max) {
+      max-width: rem(330);
+    }
   }
 
   &__text {

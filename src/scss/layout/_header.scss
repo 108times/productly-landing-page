@@ -3,11 +3,11 @@
   // .header__container
 
   @include mq(md, max) {
-    padding-top:0;
+    padding-top: 0;
     padding-bottom: rem(30);
   }
   &__container {
-    padding-inline: 0;
+    // padding-inline: 0;
   }
 
   &__left {
@@ -25,20 +25,20 @@
     padding-inline: 0;
     position: relative;
     @include mq(md, max) {
-     order: 1;
+      order: 1;
       //max-height: 50%;
     }
     .section-img {
       left: rem(-14);
       top: -11px;
 
-      @include mq(lg,max) {
+      @include mq(lg, max) {
         transform: scale(0.8);
       }
-      @include mq(md,max) {
+      @include mq(md, max) {
         transform: scale(0.7);
       }
-      @include mq(sm,max) {
+      @include mq(sm, max) {
         transform: scale(0.8);
       }
       &__wrapper {
@@ -66,15 +66,15 @@
     margin-top: rem(30);
     color: $text-color;
     font-size: 18px;
-    line-height: em(28,18px);
+    line-height: em(28, 18px);
     text-align: left;
     width: 83%;
     @include mq(lg, max) {
-      font-size:max(2vh);
+      font-size: max(2vh);
     }
 
     @include mq(md, max) {
-      font-size:max(2.8vh);
+      font-size: max(2.8vh);
       width: 100%;
       margin-inline: rem(10);
     }
@@ -107,25 +107,23 @@
     @include mq(xs, max) {
       .btn {
         font-size: 2.2vh;
-        padding-block: .5vh;
+        padding-block: 0.5vh;
       }
     }
-
 
     .btn {
       min-height: rem(53);
       padding-inline: rem(42);
     }
     &:nth-child(2) {
-        margin-left: rem(10);
+      margin-left: rem(10);
     }
   }
-
 
   .link {
     padding-block: rem(11);
     display: inline-flex;
-    gap: rem(8.5) ;
+    gap: rem(8.5);
     align-items: center;
     position: relative;
     padding: 0;
@@ -137,7 +135,4 @@
       align-items: center;
     }
   }
-
-
-
 }

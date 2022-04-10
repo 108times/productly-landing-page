@@ -96,6 +96,10 @@
     //}
     @include mq(sm,max) {
       margin-top: rem(50);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
     &__title {
       font-size: rem(20);
@@ -107,7 +111,7 @@
       max-width: rem(280);
       @include mq(md,max) {
         font-size: 2.8vh;
-
+        text-align: center;
       }
     }
 
@@ -120,9 +124,12 @@
       font-family: 'Geometria', sans-serif;
       color: $text-color-2;
       padding-inline: rem(15);
-      max-width: rem(325);
       @include mq(md,max) {
         font-size: 2vh;
+      }
+      @include mq(sm,max) {
+        max-width: rem(250);
+
       }
       &::placeholder {
         color: $secondary-color;
