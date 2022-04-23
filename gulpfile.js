@@ -44,7 +44,7 @@ const watcher = () => {
 // Последовательная обработка шрифтов
 import { otfToTtf, ttfToWoff, fontsStyles } from './gulp/tasks/fonts.js';
 
-const fonts = plugins.if(!app.development, gulp.series(otfToTtf, ttfToWoff, fontsStyles));
+const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyles); //plugins.if(!app.development, );
 
 export { fonts };
 
@@ -53,7 +53,7 @@ const mainTasks = gulp.series(fontsStyles, gulp.parallel(files, html, scss, js, 
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(clean, mainTasks, gulp.parallel(watcher, server));
-const build = gulp.series(clean, mainTasks);
+const build = gulp.series(clean,fonts, mainTasks);
 const deployZIP = gulp.series(clean, mainTasks, zip);
 const deployFTP = gulp.series(clean, mainTasks, ftp);
 // export for npm task

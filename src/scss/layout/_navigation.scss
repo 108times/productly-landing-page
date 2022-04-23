@@ -64,6 +64,10 @@
     @include mq(sm, max) {
       display: none;
     }
+    .btn {
+      transform-origin: left;
+
+    }
     }
 }
 

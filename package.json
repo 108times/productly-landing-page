@@ -51,5 +51,8 @@
     "webp-converter": "2.2.3",
     "webpack": "^5.71.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "gsap": "^3.10.3"
   }
 }

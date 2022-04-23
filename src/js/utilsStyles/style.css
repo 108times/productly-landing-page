@@ -1,0 +1,33 @@
+.cursor {
+    position: relative;
+    display: inline-block;
+    height: .8em;
+    width: 3px;
+    border-radius: 10px;
+    background: #000;
+    /*animation: blink 1s linear infinite forwards;*/
+}
+
+/*@keyframes blink {*/
+/*    from {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    to {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+/*.cursor::before,.cursor::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    transform: translateX(-50%);*/
+/*    height: 1px;*/
+/*    width: .2em;*/
+/*    background: #000;*/
+/*}*/
+/*.cursor::before {*/
+/*    top: 0;*/
+/*}*/
+/*.cursor::after {*/
+/*    bottom: 0;*/
+/*}*/
