@@ -6,6 +6,8 @@
     font-size: 1rem;
     line-height: em(24);
     font-weight: inherit;
+    position: relative;
+    display: block;
     margin-bottom: 0;
     margin-top: 0;
     @include mq(lg, max) {

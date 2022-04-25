@@ -1,5 +1,3 @@
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
 /**
  * Clear inner floats
  */
@@ -47,7 +45,7 @@
 }
 
 .container {
-  max-width: variables.$max-width; /* 1 */
+  max-width: $max-width; /* 1 */
   padding-inline: 0;
   margin-inline: auto;
   width: 100%; /* 1 */
@@ -63,6 +61,6 @@
 }
 
 
-.transparent {
+.transparent, .hidden {
   opacity: 0;
 }
